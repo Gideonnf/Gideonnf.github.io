@@ -42,7 +42,7 @@
         
         /* On hover, add a black background color with a little bit see-through */
         .prev:hover, .next:hover {
-          background-color: rgba(0,0,0,0.8);
+          background-color: rgba(0.5,0.5,0.5,0.5);
         }
         
         /* Caption text */
@@ -81,23 +81,7 @@
           background-color: #717171;
         }
         
-        /* Fading animation */
-        .fade {
-          -webkit-animation-name: fade;
-          -webkit-animation-duration: 1.5s;
-          animation-name: fade;
-          animation-duration: 1.5s;
-        }
-        
-        @-webkit-keyframes fade {
-          from {opacity: .4} 
-          to {opacity: 1}
-        }
-        
-        @keyframes fade {
-          from {opacity: .4} 
-          to {opacity: 1}
-        }
+
         
         /* On smaller screens, decrease text size */
         @media only screen and (max-width: 300px) {
@@ -148,56 +132,64 @@
                       <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                     </li>
                   </ul>
-                  <form class="form-inline my-2 my-lg-0">
+                  <!-- <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                  </form>
+                  </form> -->
                 </div>
         </nav>
         <!-- Header area -->
-        <div class="jumbotron-fluid">
-            <div class="container-fluid">
-                <h1 class="display-4">Gideon Francis</h1>
-                <p class="p-3 mb-2 bg-dark text-white">Welcome to my website. Find out more about me and my works!</p>
-            </div>
-        </div>
-        <div class="container p-3 mb-2">
-            <div class="row">
-                <div class="col-sm p-3 bg-dark text-white">
-                  <p class="lead text-left">About me</p>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pulvinar elit in vehicula rhoncus. Nam eu sapien eros. Aenean ac porta tortor. Ut convallis vehicula dolor, non faucibus nibh malesuada et. Maecenas vehicula lorem purus, sit amet fermentum velit auctor at. Quisque rutrum maximus urna quis convallis. Integer sit amet gravida dolor, id porta eros. Nunc tempus nulla in condimentum cursus. Phasellus convallis elit non felis elementum, nec dapibus felis faucibus.
-                    In et ligula quam. Nunc cursus, lorem sed fringilla dapibus, purus libero fringilla urna, et dapibus tortor elit vel dui. Cras euismod massa a egestas vestibulum. Donec dolor felis, cursus eget porttitor at, luctus consequat nulla. Nulla vel ex iaculis, luctus ipsum ac, vestibulum lorem. Morbi neque tortor, pulvinar in nibh at, tristique gravida enim. Pellentesque vehicula mollis dolor, a posuere massa dictum eu. Nunc rhoncus sollicitudin purus eget elementum. Duis nec nisi a nibh cursus laoreet. Phasellus sit amet venenatis diam. Donec tincidunt porta ultricies.
-                  </p>
-                </div>
-                <div class="col-sm p-3">
-                    <p class="lead text-left">Contact me</p>
-                  <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pulvinar elit in vehicula rhoncus. Nam eu sapien eros. Aenean ac porta tortor. Ut convallis vehicula dolor, non faucibus nibh malesuada et. Maecenas vehicula lorem purus, sit amet fermentum velit auctor at. Quisque rutrum maximus urna quis convallis. Integer sit amet gravida dolor, id porta eros. Nunc tempus nulla in condimentum cursus. Phasellus convallis elit non felis elementum, nec dapibus felis faucibus.
-                      In et ligula quam. Nunc cursus, lorem sed fringilla dapibus, purus libero fringilla urna, et dapibus tortor elit vel dui. Cras euismod massa a egestas vestibulum. Donec dolor felis, cursus eget porttitor at, luctus consequat nulla. Nulla vel ex iaculis, luctus ipsum ac, vestibulum lorem. Morbi neque tortor, pulvinar in nibh at, tristique gravida enim. Pellentesque vehicula mollis dolor, a posuere massa dictum eu. Nunc rhoncus sollicitudin purus eget elementum. Duis nec nisi a nibh cursus laoreet. Phasellus sit amet venenatis diam. Donec tincidunt porta ultricies.
-                  </p>
+        <div class="container">
+            <div class="jumbotron-fluid">
+                <div class="bg-secondary">
+                    <div class="container text-white">
+                        <h1 class="display-4">Gideon Francis</h1>
+                    </div>
+                    <div class = "container-fluid bg-dark">
+                        <p class="p-3 mb-2 bg-dark text-white">Welcome to my website. Find out more about me and my works!</p>
+                    </div>
                 </div>
               </div>
+              <div class="container p-3 mb-2">
+                  <div class="row">
+                      <div class="col-sm p-3 bg-dark text-white">
+                        <p class="lead text-left">About me</p>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pulvinar elit in vehicula rhoncus. Nam eu sapien eros. Aenean ac porta tortor. Ut convallis vehicula dolor, non faucibus nibh malesuada et. Maecenas vehicula lorem purus, sit amet fermentum velit auctor at. Quisque rutrum maximus urna quis convallis. Integer sit amet gravida dolor, id porta eros. Nunc tempus nulla in condimentum cursus. Phasellus convallis elit non felis elementum, nec dapibus felis faucibus.
+                          In et ligula quam. Nunc cursus, lorem sed fringilla dapibus, purus libero fringilla urna, et dapibus tortor elit vel dui. Cras euismod massa a egestas vestibulum. Donec dolor felis, cursus eget porttitor at, luctus consequat nulla. Nulla vel ex iaculis, luctus ipsum ac, vestibulum lorem. Morbi neque tortor, pulvinar in nibh at, tristique gravida enim. Pellentesque vehicula mollis dolor, a posuere massa dictum eu. Nunc rhoncus sollicitudin purus eget elementum. Duis nec nisi a nibh cursus laoreet. Phasellus sit amet venenatis diam. Donec tincidunt porta ultricies.
+                        </p>
+                      </div>
+                      <div class="col-sm p-3">
+                          <p class="lead text-left">Contact me</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pulvinar elit in vehicula rhoncus. Nam eu sapien eros. Aenean ac porta tortor. Ut convallis vehicula dolor, non faucibus nibh malesuada et. Maecenas vehicula lorem purus, sit amet fermentum velit auctor at. Quisque rutrum maximus urna quis convallis. Integer sit amet gravida dolor, id porta eros. Nunc tempus nulla in condimentum cursus. Phasellus convallis elit non felis elementum, nec dapibus felis faucibus.
+                            In et ligula quam. Nunc cursus, lorem sed fringilla dapibus, purus libero fringilla urna, et dapibus tortor elit vel dui. Cras euismod massa a egestas vestibulum. Donec dolor felis, cursus eget porttitor at, luctus consequat nulla. Nulla vel ex iaculis, luctus ipsum ac, vestibulum lorem. Morbi neque tortor, pulvinar in nibh at, tristique gravida enim. Pellentesque vehicula mollis dolor, a posuere massa dictum eu. Nunc rhoncus sollicitudin purus eget elementum. Duis nec nisi a nibh cursus laoreet. Phasellus sit amet venenatis diam. Donec tincidunt porta ultricies.
+                        </p>
+                      </div>
+                    </div>
+              </div>
         </div>
+      
+
 
         <div class="container-fluid">
             <div class="slideshow-container">
 
-                <div class="mySlides fade">
+                <div class="mySlides">
                   <div class="numbertext">1 / 3</div>
-                  <img src="images/Bait.jpg" style="width:100%">
+                  <img src="images/Bait.png" style="width:100%">
                   <div class="text">Caption Text</div>
                 </div>
                 
-                <div class="mySlides fade">
+                <div class="mySlides">
                   <div class="numbertext">2 / 3</div>
-                  <img src="images/Build.jpeg" style="width:100%">
+                  <img src="images/Building.png" style="width:100%">
                   <div class="text">Caption Two</div>
                 </div>
                 
-                <div class="mySlides fade">
+                <div class="mySlides">
                   <div class="numbertext">3 / 3</div>
-                  <img src="images/Ring.jpeg" style="width:100%">
+                  <img src="images/Ring.png" style="width:100%">
                   <div class="text">Caption Three</div>
                 </div>
                 

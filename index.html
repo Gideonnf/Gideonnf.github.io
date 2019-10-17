@@ -5,111 +5,71 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <style>
-        * {box-sizing: border-box}
-        body {font-family: Verdana, sans-serif; margin:0;}
-        .mySlides {display: none}
-        img {vertical-align: middle;}
-        
-        /* Slideshow container */
-        .slideshow-container {
-          max-width: 1000px;
-          position: relative;
-          margin: auto;
-        }
-
-        .grow {
-          padding: 5px 5px 5px 5px;
-          border-radius: 10px;
-          height: 49px;
-          width: 22%;
-          margin: 5px 1% 5px 1%;
-          float: left;
-          position: relative;
-          transition: height 0.5s;
-          -webkit-transition: height 0.5s;
-          text-align: center;
-          overflow: hidden;
-          }
-          .grow:hover {
-            height: 750px;
-          }
-            
-        /* Next & previous buttons */
-        .prev, .next {
-          cursor: pointer;
-          position: absolute;
-          top: 50%;
-          width: auto;
-          padding: 16px;
-          margin-top: -22px;
-          color: white;
-          font-weight: bold;
-          font-size: 18px;
-          transition: 0.6s ease;
-          border-radius: 0 3px 3px 0;
-          user-select: none;
-        }
-        
-        /* Position the "next button" to the right */
-        .next {
-          right: 0;
-          border-radius: 3px 0 0 3px;
-        }
-        
-        /* On hover, add a black background color with a little bit see-through */
-        .prev:hover, .next:hover {
-          background-color: rgba(0.5,0.5,0.5,0.5);
-        }
-        
-        /* Caption text */
-        .text {
-          color: #f2f2f2;
-          font-size: 15px;
-          padding: 8px 12px;
-          position: absolute;
-          bottom: 8px;
-          width: 100%;
-          text-align: center;
-        }
-        
-        /* Number text (1/3 etc) */
-        .numbertext {
-          color: #f2f2f2;
-          font-size: 12px;
-          padding: 8px 12px;
-          position: absolute;
-          top: 0;
-        }
-        
-        /* The dots/bullets/indicators */
-        .dot {
-          cursor: pointer;
-          height: 15px;
-          width: 15px;
-          margin: 0 2px;
-          background-color: #bbb;
-          border-radius: 50%;
-          display: inline-block;
-          transition: background-color 0.6s ease;
-        }
-        
-        .active, .dot:hover {
-          background-color: #717171;
-        }
-        
-
-        
-        /* On smaller screens, decrease text size */
-        @media only screen and (max-width: 300px) {
-          .prev, .next,.text {font-size: 11px}
-        }
-    </style>
-
     <!--<link href="css/bootstrap.css" rel="CSS Stylesheet">-->
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   
+    <style>
+      
+    .AboutMeImg {
+      opacity: 1;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
 
+    .AboutMeText{
+      transition: .5s ease;
+      opacity:0;
+    }
+
+    .MyWorkImg {
+      opacity: 1;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+
+    .MyWorkText{
+      transition: .5s ease;
+      opacity:0;
+    }
+
+    .IdkSomeImg {
+      opacity: 1;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+
+    .IdkSomeText{
+      transition: .5s ease;
+      opacity:0;
+    }
+
+
+    .container:hover .AboutMeImg {
+       opacity: 0.4;
+    }
+
+    .container:hover .AboutMeText {
+      opacity: 1;
+    }
+
+    .container:hover .MyWorkImg {
+       opacity: 0.4;
+    }
+
+    .container:hover .MyWorkText {
+      opacity: 1;
+    }
+
+    .container:hover .IdkSomeImg {
+       opacity: 0.4;
+    }
+
+    .container:hover .IdkSomeText {
+      opacity: 1;
+    }
+    </style>
+    
     <title>Hello, world!</title>
   </head>
   <body style="background-color: black;">
@@ -127,23 +87,34 @@
               <p class="text-left font-weight-light">Gameplay Programmer</p>
             </div>
             <div class="col-sm p-2 text-white rounded-0">
-              <p class="lead text-right mb-0">Test 2</p>
+              <p class="lead text-right mb-0">links and shit gonna go here</p>
             </div>
           </div>
         </div>
     <!-- Main body area -->
         <div class="container-fluid">
-          <div class="row text-white">
-            <div class="col-md rounded-0 container-fluid">
-              <!--<p class="text-center">Test</p>-->
-              <img src="images/Banner.png" class="img-fluid" alt="Bait Image">
-            </div>
-            <div class="col-md container-fluid">
-              <img src="images/Banner.png" class="img-fluid" alt="Building Image">
-            </div>
-            <div class="col-md container-fluid">
-              <img src="images/Banner.png" class="img-fluid" alt="Ring Image">
-            </div>
+          <div class="row container-fluid">
+              <div class="col-md rounded-0 container position-relative">
+                  <!--<p class="text-center">Test</p>-->
+                  <img src="images/Banner.png" class="img-fluid AboutMeImg" alt="Bait Image" >
+                    <div class="lead text-center text-white AboutMeText position-absolute" style="top:50% ; left:50%; transform: translate(-50%, 50%)">
+                      About Me
+                    </div>
+                </div>
+                <div class="col-md rounded-0 container position-relative">
+                    <!--<p class="text-center">Test</p>-->
+                    <img src="images/Banner.png" class="img-fluid MyWorkImg" alt="Bait Image" >
+                      <div class="lead text-center text-white MyWorkText position-absolute" style="top:50% ; left:50%; transform: translate(-50%, 50%)">
+                        My Works
+                      </div>
+                </div>
+                <div class="col-md rounded-0 container position-relative">
+                    <!--<p class="text-center">Test</p>-->
+                    <img src="images/Banner.png" class="img-fluid IdkSomeImg" alt="Bait Image" >
+                      <div class="lead text-center text-white IdkSomeText position-absolute" style="top:50% ; left:50%; transform: translate(-50%, 50%)">
+                        Some other Container
+                      </div>
+                </div>    
           </div>
         </div>
   </body>

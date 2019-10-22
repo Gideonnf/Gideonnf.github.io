@@ -8,11 +8,46 @@
     <!--<link href="css/bootstrap.css" rel="CSS Stylesheet">-->
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .list-group-item-action:hover, .list-group-item-action:focus {
+        z-index: 1;
+        color: #495057;
+        text-decoration: none;
+        background-color: #e6c200;
 
+        }
+
+        .list-group-item-action:active {
+            color: #e6c200;
+            background-color: #e6c200;
+        }
+
+        .list-group-item {
+        position: relative;
+        display: block;
+        padding: 0.75rem 1.25rem;
+        margin-bottom: -1px;
+        background-color: #e6c200;
+        color: #007bff;
+
+        }
+
+        .list-group-item.active {
+        z-index: 2;
+        color: #007bff;
+        background-color:  #e6c200;
+        }
+
+        .list-group-item-primary.list-group-item-action.active {
+        color: #fff;
+        background-color: #004085;
+       
+        }
+    </style>
     
     <title>Hello, world!</title>
   </head>
-  <body style="background-color: black;">
+  <body>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -20,10 +55,10 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
         <!-- Navigation bars -->
-        <div class="container-fluid  mb-4 pt-2">
+        <div class="container-fluid  mb-4 pt-2" style="background-color:#e6c200;">
             <div class="row">
                 <a href="index.html" style="text-decoration:none">
-                        <div class="col-sm pl-5 text-white rounded-0">
+                        <div class="col-sm pl-5 rounded-0">
                             <p class="lead text-left mb-0 font-weight-bolder">Gideon Francis </p>
                             <p class="text-left font-weight-light">Gameplay Programmer</p>
                         </div>      
@@ -34,29 +69,56 @@
           </div>
         </div>
         <!-- Main body -->
-        <div class="text-white container-fluid">
-            <div class="row">
-                <div class="col">
-                    <!-- Empty column meant to help align a center column-->
-                </div>
-                <div class="col-8">
-                    <!-- About me Header-->
-                    <div class="lead text-left font-weight-bold" style="text-decoration: underline;">
-                        About Me
+        <div class="jumbotron-fluid">
+            <div class="row justify-content-center">
+                <div class="col-sm-5 d-flex text-white  align-items-center">
+                    <div class="mx-5 text-dark">
+                            <p class="lead font-weight-bolder">About Me</p>
+                            <p>
+                                Hello, I'm Gideon! Graduated from Game Development and Technology in Nanyang Polytechnic's School of Interactive and Digital Media.
+                                    I love making games and playing them as well. I always aim to do my best in everything I do. I've worked with many different platforms
+                                    such as VR, AR and Mobile Games. I specialize mainly in 3D Games.
+                            </p>
+                            <p class="lead font-weight-bolder">My Skills</p>
+                            <p>
+                                Being in Nanyang Polytechnic, I was taught to use more than 1 programming language. Having HTML and Javascript as a starting point before
+                                moving onto more complex programming languages such as C++ and Java. Over the course of my studies, I have also picked up a few languages 
+                                as a personal interest as well as other softwares such as Photoshop and Maya. For a more detailed explaination, click my skills below.
+                            
+                            </p>
                     </div>
-                    <hr class="bg-white">
-                    <!-- About me Description-->
-                    <div>
-                        <p>
-                            Hello, I'm Gideon! Graduated from Game Development and Technology in Nanyang Polytechnic's School of Interactive and Digital Media.
-                            I love making games and playing them as well. 
-                        </p>
-                    </div>
                 </div>
-                <div class="col">
-                    <!-- Empty column meant to help align a center column-->
+                <div class="col-sm-4  d-flex align-items-center">
+                    <div class="mx-4">
+                            <img class="img-fluid rounded-circle" src="images/Gideon.png">
+                    </div>
                 </div>
             </div>
-
         </div>
+        <!-- Specialization gonna go here -->
+        <div class="container-fluid mt-4">
+            <div class="row justify-content-center">
+                <div class="col-3  font-weight-bold">
+                    <div class="list-group" id="list-group-item-action" role="tablist">
+                        <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">C++</a>
+                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Java</a>
+                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Python</a>
+                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">JavaScript</a>
+                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Unity</a>                   
+                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Unreal Engine</a> 
+                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Maya</a>                   
+                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Adobe Photoshop</a>
+                    </div>
+                </div>
+                <div class="col-9" style="background-color: #e6c200;">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">...</div>
+                        <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
+                        <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+                        <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+                     </div>              
+                </div>
+            </div>
+        </div>
+
     </body>    

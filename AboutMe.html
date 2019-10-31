@@ -11,15 +11,15 @@
     <style>
         .list-group-item-action:hover, .list-group-item-action:focus {
         z-index: 1;
-        color: #495057;
+        color: #007bff;
         text-decoration: none;
-        background-color: #e6c200;
+        background-color: #464646;
 
         }
 
         .list-group-item-action:active {
-            color: #e6c200;
-            background-color: #e6c200;
+            color: black;
+            background-color: #464646;
         }
 
         .list-group-item {
@@ -27,27 +27,32 @@
         display: block;
         padding: 0.75rem 1.25rem;
         margin-bottom: -1px;
-        background-color: #e6c200;
-        color: #007bff;
+        background-color: #464646;
+        color: #f1f4ee;
 
         }
 
         .list-group-item.active {
         z-index: 2;
-        color: #007bff;
-        background-color:  #e6c200;
+        color: #f1f4ee;
+        background-color:  #464646;
         }
 
         .list-group-item-primary.list-group-item-action.active {
         color: #fff;
-        background-color: #004085;
+        background-color: #464646;
        
         }
+
+        .rounded {
+            border-radius: 0.45rem !important;
+            }
+
     </style>
     
     <title>Hello, world!</title>
   </head>
-  <body>
+  <body style="background-color: #f1f4ee;">
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -55,7 +60,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
         <!-- Navigation bars -->
-        <div class="container-fluid  mb-4 pt-2" style="background-color:#e6c200;">
+        <div class="container-fluid  mb-4 pt-2" style="background-color:#464646;">
             <div class="row">
                 <a href="index.html" style="text-decoration:none">
                         <div class="col-sm pl-5 rounded-0">
@@ -71,53 +76,133 @@
         <!-- Main body -->
         <div class="jumbotron-fluid">
             <div class="row justify-content-center">
-                <div class="col-sm-5 d-flex text-white  align-items-center">
-                    <div class="mx-5 text-dark">
-                            <p class="lead font-weight-bolder">About Me</p>
-                            <p>
-                                Hello, I'm Gideon! Graduated from Game Development and Technology in Nanyang Polytechnic's School of Interactive and Digital Media.
-                                    I love making games and playing them as well. I always aim to do my best in everything I do. I've worked with many different platforms
-                                    such as VR, AR and Mobile Games. I specialize mainly in 3D Games.
-                            </p>
-                            <p class="lead font-weight-bolder">My Skills</p>
-                            <p>
-                                Being in Nanyang Polytechnic, I was taught to use more than 1 programming language. Having HTML and Javascript as a starting point before
-                                moving onto more complex programming languages such as C++ and Java. Over the course of my studies, I have also picked up a few languages 
-                                as a personal interest as well as other softwares such as Photoshop and Maya. For a more detailed explaination, click my skills below.
-                            
-                            </p>
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <div class="row">
+                            <div class="col d-flex text-white  align-items-center">
+                                <div class="mx-5 text-dark">
+                                        <p class="lead font-weight-bolder">About Me</p>
+                                        <p>
+                                            Hello, I'm Gideon! Graduated from Game Development and Technology in Nanyang Polytechnic's School of Interactive and Digital Media. Currently aiming
+                                            to enter into university after I have finished my National Service. I love working together with people to create something, whether it is a game or not.
+                                            If it helps people or provides entertainment, it provides me with a sense of fulfilment knowing that I was part of the team that made that.
+                                            <br>
+                                            <br>
+                                            I have always had an interest in games since young, playing them throughout my childhood. Starting with games like Warcraft 3 the Frozen throne, to even games like Club penguin.
+                                            It's because of these games that has inspired me to work in the game industry.
+                                            <br>
+                                            <br>
+                                            I also enjoy playing sports occasionally and am also trying to learn how to draw and model at the side. Mainly so that I can start to prototype my own games.
+                                        </p>
+                                        <hr style="background-color: #546a3a;">
+                                        <div class="row">
+                                            <div class="col">
+                                                <p class="lead font-weight-bold text-center">My Skills </p>
+                                                <div class="row">
+                                                    <div class="col-sm-4">
+                                                        <p>C/C++</p>
+                                                        <p>C#</p>
+                                                        <p>Java</p>
+                                                    </div>
+                                                    <div class="col-sm-8">
+                                                        <p>Unity</p>
+                                                        <p>Unreal Engine 4</p>
+                                                        <p>HTC Vive/Oculus</p>         
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                    <p class="lead font-weight-bold text-center">Contact Me </p>
+
+                                            </div>
+                                        </div>
+                                       
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mx-4 align-content-center pt-5">
+                                   
+                                        <img class="img-fluid rounded mx-auto d-block" style="max-width: auto; height:100%" src="images/Gideon.png">
+                                </div>
+                            </div>
                     </div>
                 </div>
-                <div class="col-sm-4  d-flex align-items-center">
-                    <div class="mx-4">
-                            <img class="img-fluid rounded-circle" src="images/Gideon.png">
-                    </div>
-                </div>
+                <div class="col-sm-2"></div>
+               
             </div>
         </div>
+                        <!--<p class="lead font-weight-bolder text-center">My Experiences</p>
+                        <p>
+                            Throughout my time in Nanyang Polytechnic's Game Development and Technology, I've taken part in many group projects. It was compulsory to have a 3 week long Game Project, otherwise known as 
+                            Studio Projects, at end of each semester. Other than that, there are also group assignments in every semester, with each year having progressively more group projects. In year three, we always
+                            work with Digital Game Art and Design Students to create games or apps. They would provide the art needed, while we would code the game out.
+
+                            Some of my more notable projects which some can be found in my Portfolio works are my Fourth Studio Project which was my first project working with big team of 4 Artist and 4 Programmers to create a final product as well 
+                            as my Open House 2019 Game that I made for my school when I was part of my school club's Executive Committee. In year 3 during my Final Year Project, I had to work with MOE on a undisclosed project which was my first time 
+                            working with clients to create a game. 
+
+                             
+                        </p>-->
+                       
         <!-- Specialization gonna go here -->
         <div class="container-fluid mt-4">
+            <hr style="background-color: #546a3a;">
             <div class="row justify-content-center">
-                <div class="col-3  font-weight-bold">
-                    <div class="list-group" id="list-group-item-action" role="tablist">
-                        <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">C++</a>
-                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Java</a>
-                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Python</a>
-                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">JavaScript</a>
-                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Unity</a>                   
-                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Unreal Engine</a> 
-                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Maya</a>                   
-                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Adobe Photoshop</a>
+                <div class="col-sm-2"></div> <!-- Empty Column-->
+                <div class="col-sm-8">
+                    <div class="row">
+                        <div class="col-3  font-weight-bold">
+                            <div class="list-group rounded" id="list-group-item-action" role="tablist">
+                                <a class="list-group-item list-group-item-action active" id="list-internship-list" data-toggle="list" href="#list-internship" role="tab" aria-controls="internship">Internship</a>
+                                <a class="list-group-item list-group-item-action" id="list-FYP-list" data-toggle="list" href="#list-FYP" role="tab" aria-controls="FYP">Final Year Projects</a>
+                                <a class="list-group-item list-group-item-action" id="list-SP-list" data-toggle="list" href="#list-SP" role="tab" aria-controls="SP">Studio Projects</a>
+                                <a class="list-group-item list-group-item-action" id="list-jams-list" data-toggle="list" href="#list-jams" role="tab" aria-controls="jams">Game Jams</a>
+                            </div>
+                        </div>
+                        <div class="col-9 rounded" style="background-color: #464646;">
+                            <div class="tab-content text-white " id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="list-internship" role="tabpanel" aria-labelledby="list-internship-list">
+                                    <h5 class=" mt-2">Kajaani University of Applied Sciences (June 2019 - August 2019)</h5>
+                                    <hr>
+                                    <p>
+                                        During Internship, I went overseas to Finland's Kajaani University of Applied Sciences for three months. Over there, I had to work within a group consisting of other students from multiple countries. I was required to create 
+                                        a commercial game in 7 weeks during their Summer Game Course and either publish it on Itch.io, Steam or any other notable platforms. 
+                                        <br><br>
+                                        Working in this new environment taught me a lot of new skills. I had picked up Unreal Engine during my time at this internship, as my team chose to create our game in 
+                                        Unreal Engine. I also had to learn to communicate a lot more. Working in a team of foreigners, we had a lot of commmunication issues. There were three nationalities in my team, Thai, Finnish and Singaporean. 
+                                        This brought a lot of communication issues as some of my team members couldn't converse in english that well. It was challenging at the start, we made a lot of conflicts in our code when we were trying to push due to a 
+                                        communication break down between the programmers. I had to learn how to communicate with them better, either expressing myself in simpler terms for them to understand, speaking slower or finding other means to communicate 
+                                        efficiently such as using Discord for urgent questions. Patiences was also something else that I had greatly improved in. Due to the langauge barrier, communication can be a bit slow when conversing in person thus I had to learn 
+                                        to be a bit more patient when talking to my team mates and repeating my words repeatedly. 
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="list-FYP" role="tabpanel" aria-labelledby="list-FYP-list">
+                                    <h5 class=" mt-2">Final Year Project 1 (February 2019 - May 2019) <br> Final Year Project 2 (October 2019 - February 2020)</h5>
+                                    <hr>
+                                    <p>
+                                        In my Final Year Project 1, I had the opportunity to work with MOE to develope an undisclosed Game for them. It was quite a new experience for me, being my first client project that I worked on. 
+                                        For my Final Year Project 2, I worked on a VR Game built on the Oculus Quest for my school's Open House 2020.
+                                        <br><br>
+                                        These projects were the longest I had to work in, both being about 3 months or more. For the MOE Project, my team was the first team to take over the project that was meant to stretch over a period of time. 
+                                        Due to this, I had to take a lot more consideration into documentation and writing easily readable code as a few other teams will be taking over my work to continue. Communication in these projects were also 
+                                        very important as they are quite long with a decently sized team. 
+                                        <br><br>
+                                        Working on the Oculus Quest for my second Final Year Project was also a new experience for me. Being the first team to work on the Oculus Quest, there were a lot of issues that I had to find ways around. The 
+                                        biggest issue being the lack of a debugger when I first started using it. There was no way to link the Oculus Quest with Unity during the early to middle stages of the game development. Thus, I had to create 
+                                        my own debugging tools that I can use to help make the debugging process a little bit less painful. 
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="list-SP" role="tabpanel" aria-labelledby="list-SP-list">
+                                    <h5 class=" mt-2">Studio Projects</h5>
+                                </div>
+                                <div class="tab-pane fade" id="list-jams" role="tabpanel" aria-labelledby="list-jams-list">
+                                    <h5 class=" mt-2">Game Jams</h5>
+                                </div>
+                            </div>              
+                        </div>
                     </div>
                 </div>
-                <div class="col-9" style="background-color: #e6c200;">
-                    <div class="tab-content" id="nav-tabContent">
-                        <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">...</div>
-                        <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
-                        <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
-                        <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
-                     </div>              
-                </div>
+                <div class="col-sm-2"></div><!-- Empty Column-->
             </div>
         </div>
 

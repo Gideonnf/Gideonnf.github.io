@@ -10,6 +10,109 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
    
     <style>
+
+
+  * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      min-height: 100vh;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+
+    h2,
+    h3,
+    a {
+      color: #34495e;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+
+
+    .logo {
+      margin: 0;
+      font-size: 1.45em;
+    }
+
+    .main-nav {
+      margin-top: 5px;
+
+    }
+    .logo a,
+    .main-nav a {
+      padding: 10px 15px;
+      text-transform: uppercase;
+      text-align: center;
+      display: block;
+    }
+
+    .main-nav a {
+      color: #34495e;
+      font-size: .99em;
+    }
+
+    .main-nav a:hover {
+      color: #718daa;
+    }
+
+
+
+    .header {
+      padding-top: .5em;
+      padding-bottom: .5em;
+      position:fixed;
+      
+      width:100%;
+      border: 1px solid #a2a2a2;
+      background-color: #f4f4f4;
+      -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+      box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+    }
+
+
+  /* ================================= 
+    Media Queries
+  ==================================== */
+  @media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+    .header{
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+	}
+ 
+}
+
+    @media (min-width: 1025px) {
+      .header {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+    }
+
       
     .AboutMeImg {
       opacity: 1;
@@ -72,7 +175,7 @@
     
     <title>Hello, world!</title>
   </head>
-  <body style="background-color: black;">
+  <body style="background-color: #f1f4ee;">
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -80,23 +183,22 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <!-- Navigation bars -->
-        <div class="container-fluid  mb-4 pt-2">
-          <div class="row">
-            <a href="index.html" style="text-decoration:none">
-                <div class="col-sm pl-5 text-white rounded-0">
-                    <p class="lead text-left mb-0 font-weight-bolder">Gideon Francis </p>
-                    <p class="text-left font-weight-light">Gameplay Programmer</p>
-                </div>      
-            </a>
-            <div class="col-sm p-2 text-white rounded-0">
-              <p class="lead text-right mb-0">links and shit gonna go here</p>
-            </div>
-          </div>
-        </div>
+    <div class="container-fluid" style="top:0">
+        <header class="header">
+            <h1 class="logo"><a href="#">Gideon Francis</a></h1>
+              <ul class="main-nav">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="#">Contact</a></li>
+              </ul>
+          </header> 
+    </div>
+    
+    
     <!-- Main body area -->
-        <div class="container-fluid">
-          <div class="row container-fluid">
-              <div class="col-md rounded-0 container position-relative">
+        <div class="container-fluid px-0 " style="padding-top: 100px; position:relative; z-index:-1;" >
+              <div class="rounded-0 container position-relative pt-5">
                   <!--<p class="text-center">Test</p>-->
                   <a href="AboutMe.html">
                       <img src="images/Banner.png" class="img-fluid AboutMeImg" alt="Bait Image" >
@@ -105,22 +207,20 @@
                       About Me
                     </div>
                 </div>
-                <div class="col-md rounded-0 container position-relative">
+                <div class="rounded-0 container position-relative">
                     <!--<p class="text-center">Test</p>-->
                     <img src="images/Banner.png" class="img-fluid MyWorkImg" alt="Bait Image" >
                       <div class="lead text-center text-white MyWorkText position-absolute" style="top:50% ; left:50%; transform: translate(-50%, 50%)">
                         My Works
                       </div>
                 </div>
-                <div class="col-md rounded-0 container position-relative">
+                <div class="rounded-0 container position-relative">
                     <!--<p class="text-center">Test</p>-->
                     <img src="images/Banner.png" class="img-fluid IdkSomeImg" alt="Bait Image" >
                       <div class="lead text-center text-white IdkSomeText position-absolute" style="top:50% ; left:50%; transform: translate(-50%, 50%)">
                         Some other Container
                       </div>
                 </div>   
-               
-          </div>
         </div>
   </body>
 </html>

@@ -8,7 +8,11 @@
     <!--<link href="css/bootstrap.css" rel="CSS Stylesheet">-->
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <style>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/imagehover.css">
+
+
+   <style>
         .parallax {
             /* Background Image */
             background-image: url("images/Banner2.png");
@@ -30,7 +34,7 @@
             right: 0;
             height:450px;
             width:100%;
-            opacity: 0;
+            opacity: 0.2;
             transition: .5s ease;
             background: rgba(0, 0, 0, 0.0);
         }
@@ -86,53 +90,73 @@
         <!-- Main body -->
         <div class="jumbotron-fluid">
             <div class="container-fluid pl-5 pr-5">
-                <div class="row">
-                    <div class="col d-flex text-white  align-items-center">
-                        <div class="mx-5 text-dark">
-                            <p class="lead font-weight-bolder">About Me</p>
-                            <p>
-                                Hello, I'm Gideon! Graduated from Game Development and Technology in Nanyang Polytechnic's School of Interactive and Digital Media. Currently aiming
-                                to enter into university after I have finished my National Service. I love working together with people to create something, whether it is a game or not.
-                                If it helps people or provides entertainment, it provides me with a sense of fulfilment knowing that I was part of the team that made that.
-                                <br>
-                                <br>
-                                I have always had an interest in games since young, playing them throughout my childhood. Starting with games like Warcraft 3 the Frozen throne, to even games like Club penguin.
-                                It's because of these games that has inspired me to work in the game industry.
-                                <br>
-                                <br>
-                                I also enjoy playing sports occasionally and am also trying to learn how to draw and model at the side. Mainly so that I can start to prototype my own games.
-                            </p>
-                            <hr style="background-color: #546a3a;">
-                            <div class="row">
-                                <div class="col">
-                                    <p class="lead font-weight-bold text-center">My Skills </p>
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <p>C/C++</p>
-                                            <p>C#</p>
-                                            <p>Java</p>
-                                        </div>
-                                        <div class="col-sm-8">
-                                            <p>Unity</p>
-                                            <p>Unreal Engine 4</p>
-                                            <p>HTC Vive/Oculus</p>         
+                <div class="effects">
+                    <div class="row">
+                        <div class="col d-flex text-white  align-items-center">
+                            <div class="mx-5 text-dark">
+                                <p class="lead font-weight-bolder">About Me</p>
+                                <p>
+                                    Hello, I'm Gideon! Graduated from Game Development and Technology in Nanyang Polytechnic's School of Interactive and Digital Media. Currently aiming
+                                    to enter into university after I have finished my National Service. I love working together with people to create something, whether it is a game or not.
+                                    If it helps people or provides entertainment, it provides me with a sense of fulfilment knowing that I was part of the team that made that.
+                                    <br>
+                                    <br>
+                                    I have always had an interest in games since young, playing them throughout my childhood. Starting with games like Warcraft 3 the Frozen throne, to even games like Club penguin.
+                                    It's because of these games that has inspired me to work in the game industry.
+                                    <br>
+                                    <br>
+                                    I also enjoy playing sports occasionally and am also trying to learn how to draw and model at the side. Mainly so that I can start to prototype my own games.
+                                </p>
+                                <hr style="background-color: #546a3a;">
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="lead font-weight-bold text-center">My Skills </p>
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <p>C/C++</p>
+                                                <p>C#</p>
+                                                <p>Java</p>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <p>Unity</p>
+                                                <p>Unreal Engine 4</p>
+                                                <p>HTC Vive/Oculus</p>         
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col">
-                                        <p class="lead font-weight-bold text-center">Contact Me </p>
-                                        <p> links and shit gonna go here </p>
+                                    <div class="col">
+                                            <p class="lead font-weight-bold text-center">Contact Me </p>
+                                            <p> links and shit gonna go here </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="mx-4 align-content-center pt-5">
-                        <img class="img-fluid rounded mx-auto d-block" style="width:50%; height: 50%;" src="images/Gideon.png">
+                        
+                        <div class="col">
+                            <!-- wtf i found github css that does all this shit for me already
+                            why the fuk did i waste 2 hours of my life
+                            im gonna punch smth istg-->
+                            <div class="container-fluid pt-5" style="width: 75%; height: 75%;">
+                                <figure class="imghvr-fade mx-4 align-content-center">
+                                    <img class="img-fluid rounded mx-auto d-block " src="images/IndexIMG.png">
+                                    <figcaption>
+                                        <h1 class="text-center">
+                                            NYP Open House 2020
+                                        </h1>
+                                        <h3 class="text-center">
+                                            Showcasing SIDM Escape
+                                        </h3>
+                                    </figcaption>
+                                </figure>
+                            </div>
                         </div>
-                    </div>
+                    </div>    
                 </div>
             </div>
         </div>
-                       
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script> 
     </body>    

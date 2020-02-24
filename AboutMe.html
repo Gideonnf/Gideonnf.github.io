@@ -6,205 +6,217 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!--<link href="css/bootstrap.css" rel="CSS Stylesheet">-->
+    <!-- For Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <style>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/imagehover.css">
+   <style>
+        .parallax {
+            /* Background Image */
+            background-image: url("images/Banner2.png");
+
+            height: 450px;
+
+            /* Creates the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .overlay {
+            position:absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height:450px;
+            width:100%;
+            opacity: 0.2;
+            transition: .5s ease;
+            background: rgba(0, 0, 0, 0.0);
+        }
+
+
+        .parallax:hover .overlay {
+            opacity: 1;
+            background: rgba(0, 0, 0, 0.7);
+        }
         
-
-          .parallax {
-                /* Background Image */
-                background-image: url("images/Banner2.png");
-
-                /* Height of the image */
-                height: 500px;
-                
-
-                /* Creates the parallax scrolling effect */
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-
-            }
-
-        .list-group-item-action:hover, .list-group-item-action:focus {
-        z-index: 1;
-        color: #007bff;
-        text-decoration: none;
-        background-color: #464646;
-
-        }
-
-        .list-group-item-action:active {
-            color: black;
-            background-color: #464646;
-        }
-
-        .list-group-item {
-        position: relative;
-        display: block;
-        padding: 0.75rem 1.25rem;
-        margin-bottom: -1px;
-        background-color: #464646;
-        color: #f1f4ee;
-
-        }
-
-        .list-group-item.active {
-        z-index: 2;
-        color: #f1f4ee;
-        background-color:  #464646;
-        }
-
-        .list-group-item-primary.list-group-item-action.active {
-        color: #fff;
-        background-color: #464646;
-       
-        }
-
         .rounded {
-            border-radius: 0.45rem !important;
-            }
+        border-radius: 0.45rem !important;
+        }
+
+
 
     </style>
     
     <title>Hello, world!</title>
   </head>
-  <body style="background-color: #f1f4ee;">
+  <body style="background-color: #ffffff;">
     
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
-        <!-- Navigation bars -->
-        <div class="container-fluid  mb-4 pt-2" style="background-color:#464646;">
-            <div class="row">
-                <a href="index.html" style="text-decoration:none">
-                        <div class="col-sm pl-5 rounded-0">
-                            <p class="lead text-left mb-0 font-weight-bolder">Gideon Francis </p>
-                            <p class="text-left font-weight-light">Gameplay Programmer</p>
-                        </div>      
-                </a>
-                <div class="col-sm p-2 text-white rounded-0">
-                   <p class="lead text-right mb-0">links and shit gonna go here</p>
-                </div>
-          </div>
-        </div>
 
-        <div class="ratio">
-            <div class="parallax"> </div>
-        </div>
+        <!-- HEAD BANNER PART -->
+        
+        <!-- dood wtf this part so fukin gay holy fukin shit
+        i wan 2 die why is it so complicated to center a fking aioufiashdihasi-->
+            <div class="parallax jumbotron-fluid text-center text-white" >
+                <!-- fuk the overlay effect took awhile aisoaiodaisohdioahsi -->
+                <div class="overlay">
+                    <br>
+                    <br>
+                    <br>
+                    <div class="text-white text-center pt-5">
+                        <h1><a class="indexhref" href="index.html">Gideon Nicholas Francis</a></h1>
+                    </div>
+                    <div class="text-white">
+                        <h3>
+                            Mobile VR/AR Programmer
+                        </h3>
+                    </div>
+                    <div class="weblinks">
+                        <h4>
+                            <a class="text-info" href="Project.html">Projects</a> | <a class="text-info" href="Resume.html">Resume</a> | <a class="currentPage" >About Me</a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
 
         <!-- Main body -->
         <div class="jumbotron-fluid">
-            <div class="container-fluid pl-5 pr-5">
-                <div class="row">
-                    <div class="col d-flex text-white  align-items-center">
-                        <div class="mx-5 text-dark">
-                            <p class="lead font-weight-bolder">About Me</p>
-                            <p>
-                                Hello, I'm Gideon! Graduated from Game Development and Technology in Nanyang Polytechnic's School of Interactive and Digital Media. Currently aiming
-                                to enter into university after I have finished my National Service. I love working together with people to create something, whether it is a game or not.
-                                If it helps people or provides entertainment, it provides me with a sense of fulfilment knowing that I was part of the team that made that.
-                                <br>
-                                <br>
-                                I have always had an interest in games since young, playing them throughout my childhood. Starting with games like Warcraft 3 the Frozen throne, to even games like Club penguin.
-                                It's because of these games that has inspired me to work in the game industry.
-                                <br>
-                                <br>
-                                I also enjoy playing sports occasionally and am also trying to learn how to draw and model at the side. Mainly so that I can start to prototype my own games.
-                            </p>
-                            <hr style="background-color: #546a3a;">
-                            <div class="row">
-                                <div class="col">
-                                    <p class="lead font-weight-bold text-center">My Skills </p>
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <p>C/C++</p>
-                                            <p>C#</p>
-                                            <p>Java</p>
+            <div class="container-fluid pl-5 pr-5 pt-5" >
+                <div class="effects">
+                    <!-- this the row for the entire container area-->
+                    <div class="row" >
+                        <div class="col d-flex align-items-center">
+                            <div class="mx-5 text-dark">
+                                <!-- This the row for about me-->
+                                    <!-- About me header area xD-->
+                                    <div class="container-fluid" >
+                                        <div data-aos-once="true" data-aos="fade-in" data-aos-duration="700" data-aos-delay="300">
+                                            <h1 class="font-weight-bold">About Me</h1>
+                                            <p>
+                                                 This is where you can find out more about me. I'm always involved in my CCA, my school club, School of Interactive and Digital Media Club. 
+                                                 I've been a part of that CCA since my first year. I started with helping in events, before being moved to the ambassadorial team in Year 1.
+                                                 In Year 2, I was selected to be part of the Executive Committee and was the Head of Welfare and Recruitment.
+                                                 <br>
+                                                 <br>
+                                                 Below, you can find more about my achievements, skills and the tools that I use! However, I am easily adaptable as I've managed to adapt
+                                                 to new tools whenever I'm required to use them.
+                                            </p>
                                         </div>
-                                        <div class="col-sm-8">
-                                            <p>Unity</p>
-                                            <p>Unreal Engine 4</p>
-                                            <p>HTC Vive/Oculus</p>         
+                                        <hr>
+                                        <div class="row" data-aos-once="true" data-aos="fade-in" data-aos-duration="700" data-aos-delay="300">
+                                            <div class="col">
+                                                <h3 class="font-weight-bold">Achievements</h3>
+                                                <p class="font-weight-bold">Nanyang Polytechnic</p>
+                                                <ul>
+                                                    <li>Director's List</li>
+                                                    <ul class="font-weight-light">
+                                                        <li>Year 1 - Semester 1 & 2</li>
+                                                        <li>Year 2 - Semester 1</li>
+                                                        <li>Year 3 - Semester 1 & 2</li>
+                                                    </ul>
+                                                    <li>International Game Concept Challenge</li>
+                                                    <ul class="font-weight-light">
+                                                        <li>
+                                                            Gold Award
+                                                        </li>
+                                                    </ul>
+                                                    <li>SIDM Club - Head of Recruitment and Welfare</li>
+                                                    <li>Leadership and Character Development</li>
+                                                    <ul class="font-weight-light">
+                                                        <li> SIDM Club - Silver Award</li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                            <div class="col">
+                                                <h3 class="font-weight-bold">Experiences</h3>
+                                                <p class="font-weight-bold">Kajaani University of Applied Sciences</p>
+                                                <p> 
+                                                    Lead Gameplay Programmer
+                                                    <br>
+                                                    Game Designer
+                                                    <br>
+                                                    <a class="font-weight-light">June 2019 - August 2019</a> 
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div data-aos="fade-in" data-aos-duration="700" data-aos-delay="300">
+                                            <h3 class="font-weight-bold">Skill Sets</h3>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h4 class="font-weight-bold">Languages</h4>
+                                                    <ul>
+                                                        <li>C++</li>
+                                                        <li>C#</li>
+                                                        <li>Java</li>
+                                                        <li>JavaScript</li>
+                                                    </ul>
+                                                    <h4 class="font-weight-bold">Otheres</h4>
+                                                    <ul>
+                                                        <li>Virtual Reality <a class="font-weight-light">(Oculus/HTC Vive)</a></li>
+                                                        <li>Augmented Reality <a class="font-weight-light">(Vuforia)</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col">
+                                                    <h4 class="font-weight-bold">Tools</h4>
+                                                    <ul>
+                                                        <li>Unity Engine</li>
+                                                        <li>OpenGL</li>
+                                                        <li>Unreal Engine</li>
+                                                        <li>Phaser</li>
+                                                        <li>Cocos2D</li>
+                                                        <li>Adobe Photoshop</li>
+                                                        <li>Maya</li>
+                                                    </ul>
+                                                </div>
+                                            </div>    
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col">
-                                        <p class="lead font-weight-bold text-center">Contact Me </p>
-                                        <p> links and shit gonna go here </p>
-                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="mx-4 align-content-center pt-5">
-                        <img class="img-fluid rounded mx-auto d-block" style="width:50%; height: 50%;" src="images/Gideon.png">
+                        
+                        <div class="col" data-aos-once="true" data-aos="fade-in" data-aos-duration="700" data-aos-delay="300">
+                            <!-- wtf i found github css that does all this shit for me already
+                            why the fuk did i waste 2 hours of my life
+                            im gonna punch smth istg-->
+                            <div class="container-fluid pt-5">
+                                <figure class="imghvr-fade mx-4 align-content-center">
+                                    <img class="img-fluid" src="images/GideonFusion.png">
+                                    <figcaption>
+                                        <h1 class="text-center">
+                                            NYP Open House 2020
+                                        </h1>
+                                        <h3 class="text-center">
+                                            Showcasing SIDM Escape
+                                        </h3>
+                                    </figcaption>
+                                </figure>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-                       
-        <!-- Specialization gonna go here -->
-        <div class="container-fluid mt-4 p-5">
-            <hr style="background-color: #546a3a;">
-            <div class="justify-content-center">
-                <div class="row">
-                    <div class="col-3  font-weight-bold">
-                        <div class="list-group rounded" id="list-group-item-action" role="tablist">
-                            <a class="list-group-item list-group-item-action active" id="list-internship-list" data-toggle="list" href="#list-internship" role="tab" aria-controls="internship">Internship</a>
-                            <a class="list-group-item list-group-item-action" id="list-FYP-list" data-toggle="list" href="#list-FYP" role="tab" aria-controls="FYP">Final Year Projects</a>
-                            <a class="list-group-item list-group-item-action" id="list-SP-list" data-toggle="list" href="#list-SP" role="tab" aria-controls="SP">Studio Projects</a>
-                            <a class="list-group-item list-group-item-action" id="list-jams-list" data-toggle="list" href="#list-jams" role="tab" aria-controls="jams">Game Jams</a>
-                        </div>
-                    </div>
-                    <div class="col-9 rounded" style="background-color: #464646;">
-                        <div class="tab-content text-white " id="nav-tabContent">
-                            <div class="tab-pane fade show active" id="list-internship" role="tabpanel" aria-labelledby="list-internship-list">
-                                <h5 class=" mt-2">Kajaani University of Applied Sciences (June 2019 - August 2019)</h5>
-                                <hr>
-                                <p>
-                                    During Internship, I went overseas to Finland's Kajaani University of Applied Sciences for three months. Over there, I had to work within a group consisting of other students from multiple countries. I was required to create 
-                                    a commercial game in 7 weeks during their Summer Game Course and either publish it on Itch.io, Steam or any other notable platforms. 
-                                    <br><br>
-                                    Working in this new environment taught me a lot of new skills. I had picked up Unreal Engine during my time at this internship, as my team chose to create our game in 
-                                    Unreal Engine. I also had to learn to communicate a lot more. Working in a team of foreigners, we had a lot of commmunication issues. There were three nationalities in my team, Thai, Finnish and Singaporean. 
-                                    This brought a lot of communication issues as some of my team members couldn't converse in english that well. It was challenging at the start, we made a lot of conflicts in our code when we were trying to push due to a 
-                                    communication break down between the programmers. I had to learn how to communicate with them better, either expressing myself in simpler terms for them to understand, speaking slower or finding other means to communicate 
-                                    efficiently such as using Discord for urgent questions. Patiences was also something else that I had greatly improved in. Due to the langauge barrier, communication can be a bit slow when conversing in person thus I had to learn 
-                                    to be a bit more patient when talking to my team mates and repeating my words repeatedly. 
-                                </p>
-                            </div>
-                            <div class="tab-pane fade" id="list-FYP" role="tabpanel" aria-labelledby="list-FYP-list">
-                                <h5 class=" mt-2">Final Year Project 1 (February 2019 - May 2019) <br> Final Year Project 2 (October 2019 - February 2020)</h5>
-                                <hr>
-                                <p>
-                                    In my Final Year Project 1, I had the opportunity to work with MOE to develope an undisclosed Game for them. It was quite a new experience for me, being my first client project that I worked on. 
-                                    For my Final Year Project 2, I worked on a VR Game built on the Oculus Quest for my school's Open House 2020.
-                                    <br><br>
-                                    These projects were the longest I had to work in, both being about 3 months or more. For the MOE Project, my team was the first team to take over the project that was meant to stretch over a period of time. 
-                                    Due to this, I had to take a lot more consideration into documentation and writing easily readable code as a few other teams will be taking over my work to continue. Communication in these projects were also 
-                                    very important as they are quite long with a decently sized team. 
-                                    <br><br>
-                                    Working on the Oculus Quest for my second Final Year Project was also a new experience for me. Being the first team to work on the Oculus Quest, there were a lot of issues that I had to find ways around. The 
-                                    biggest issue being the lack of a debugger when I first started using it. There was no way to link the Oculus Quest with Unity during the early to middle stages of the game development. Thus, I had to create 
-                                    my own debugging tools that I can use to help make the debugging process a little bit less painful. 
-                                </p>
-                            </div>
-                            <div class="tab-pane fade" id="list-SP" role="tabpanel" aria-labelledby="list-SP-list">
-                                <h5 class=" mt-2">Studio Projects</h5>
-                            </div>
-                            <div class="tab-pane fade" id="list-jams" role="tabpanel" aria-labelledby="list-jams-list">
-                                <h5 class=" mt-2">Game Jams</h5>
-                            </div>
-                        </div>              
-                    </div>
+                    </div>    
                 </div>
             </div>
         </div>
 
-    </body>    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script> 
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    
+</body>    
+</html>

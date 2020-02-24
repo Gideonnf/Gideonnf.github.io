@@ -9960,6 +9960,22 @@ a.text-dark:hover, a.text-dark:focus {
   color: inherit !important;
 }
 
+/* This is mine */
+.currentPage {
+  color: #0f6674 !important;
+  text-decoration: underline;
+}
+
+.indexhref {
+  color: white;
+  text-decoration: none;
+}
+
+.indexhref:hover {
+  color: #e6dfdf;
+  text-decoration: none;
+}
+
 .visible {
   visibility: visible !important;
 }

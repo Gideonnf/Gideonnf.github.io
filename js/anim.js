@@ -50,4 +50,10 @@ t1.fromTo(
     { opacity: 0},
     { opacity: 1},
     "-=0.5"
+).fromTo(
+    headlineName,
+    0.5,
+    { opacity: 0},
+    { opacity: 1},
+    "-=0.5"
 );

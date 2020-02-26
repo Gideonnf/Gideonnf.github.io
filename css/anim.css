@@ -26,15 +26,18 @@
 
 #home {
     grid-column:2/3;
-    font-size: 24px;
+    font-size: 2.5vh;
+    padding-top: 10px;
 }
 #projects {
     grid-column:3/4;
-    font-size: 24px;
+    font-size: 2.5vh;
+    padding-top: 10px;
 }
 #aboutMe {
     grid-column:4/5;
-    font-size: 24px;
+    font-size: 2.5vh;
+    padding-top: 10px;
 }
 
 .hamburger {
@@ -43,7 +46,7 @@
 
 section {
     display: flex;
-    height : 80vh;
+    height : 90vh;
     justify-content: center;
     align-items: center;
 }
@@ -64,8 +67,17 @@ section {
     position: absolute;
     top: 50%;
     left: 0%;
+    font-size: 3vw;
+    transform: translate(100%, -50%);
+    color: gold;
+    z-index: 3;
+}
+.headlineName {
+    position: absolute;
+    top: 40%;
+    left: 0%;
     font-size: 5vw;
-    transform: translate(40%, -50%);
+    transform: translate(50%, -40%);
     color: gold;
     z-index: 3;
 }

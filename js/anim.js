@@ -19,4 +19,35 @@ t1.fromTo(
     {width: '100%'}, 
     {
         width: '80%', ease: Power2.easeInOut 
-    });
+    }
+).fromTo(
+    slider,
+     1.2, 
+     {x: "-100%"}, 
+     {x: '0%', ease: Power2.easeInOut},
+     '-=1.2'
+).fromTo(
+    home,
+    0.5,
+    { opacity: 0, x: -30},
+    { opacity: 1, x: 0},
+    "-=0.5"
+).fromTo(
+    projects,
+    0.5,
+    { opacity: 0, y: -30},
+    { opacity: 1, y: 0},
+    "-=0.5"
+).fromTo(
+    aboutMe,
+    0.5,
+    { opacity: 0, x: 30},
+    { opacity: 1, x: 0},
+    "-=0.5"
+).fromTo(
+    headline,
+    0.5,
+    { opacity: 0},
+    { opacity: 1},
+    "-=0.5"
+);

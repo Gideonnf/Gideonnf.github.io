@@ -9962,17 +9962,17 @@ a.text-dark:hover, a.text-dark:focus {
 
 /* This is mine */
 .currentPage {
-  color: #0f6674 !important;
+  color: darkgoldenrod!important;
   text-decoration: underline;
 }
 
 .indexhref {
-  color: white;
+  color: #EEE8AA;
   text-decoration: none;
 }
 
 .indexhref:hover {
-  color: #e6dfdf;
+  color: #F0E68C;
   text-decoration: none;
 }
 

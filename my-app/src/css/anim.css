@@ -66,17 +66,21 @@ section {
 .headline {
     position: absolute;
     top: 50%;
+    right: 50%;
     left: 0%;
+    text-align: center;
     font-size: 3vw;
-    transform: translate(75%, -50%);
+    transform: translate(50%, -50%);
     color: gold;
     z-index: 3;
 }
 .headlineName {
     position: absolute;
     top: 40%;
+    right:50%;
     left: 0%;
     font-size: 5vw;
+    text-align: center;
     transform: translate(50%, -40%);
     color: gold;
     z-index: 3;

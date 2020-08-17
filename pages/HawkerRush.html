@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <!--<link href="css/bootstrap.css" rel="CSS Stylesheet">-->
+    <!-- For Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/imagehover.css">
+
+    <style>
+
+        a {
+            color: gold;
+          }
+
+          a:hover {
+            color: darkgoldenrod;
+          }
+
+          .ProjectList {
+            height: 400px;
+          }
+
+          img {
+              height: 100%;
+              max-width: 100%;
+              
+              text-align: center;
+          }
+
+    </style>
+
+    <title>Class Dismissed!</title>
+
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/FinalSubmission.json", {onProgress: UnityProgress});
+    </script>
+
+  </head>
+  <body style="background-color: #000000;">
+    
+    <div class="jumbotron-fluid text-center text-white">
+        <h1 class="pt-5"><a class="indexhref" href="Home.html">Gideon Nicholas Francis</a></h1>
+        <hr width="20%" style="border: 2px solid gold; border-radius: 10px;">
+        <h3>Gameplay Programmer</h3>
+        <div class="weblinks">
+            <h4>
+                <a href="Project.html">Projects</a> | <a href="https://drive.google.com/file/d/1tATshgMpfl2tOTvt6KTbo667EgMVeauO/view?usp=sharing">Resume</a> | <a href="AboutMe.html">About Me</a>
+            </h4>
+        </div>
+    </div>
+          
+
+     <!-- Main Body -->
+     <div class="container-fluid pt-5">
+      <div class="effects">
+          <!-- this the row for the entire container area-->
+          <div class="row justify-content-around">
+              <div class="col-md-5 pt-5">
+                  <div class="text-white">
+                  <!-- This the row for about me-->
+                      <!-- About me header area xD-->
+                      <div  data-aos-once="true" data-aos="fade-in" data-aos-duration="700" data-aos-delay="300">
+                          <h1 class="font-weight-bold" style="color: gold;">Hawker Rush</h1>
+                          <p>
+                            <a class="text-info">Hawker Rush</a> is a point-and-click cooking game created for Singapore's Heritage Game Jam 2020. It was done in 5-6 days by a team of 5. 
+                            Play the role as various hawker shop owners in different areas of Singapore. Experience the different Singapore Cuisine by trying to create the dishes yourself and sell it to 
+                            very hungry customers. There are two game modes available in our Game Jam version. An Endless mode with never ending stream of customers or a story mode that brings you through each stages.
+                          </p>
+                          <h2 class="text-right font-weight-bold" style="color:gold">About the Project</h2>
+                          <p>
+                              Coming up with our game design idea was challenging. We had to find something that can talk about Singapore's heritage, it could be past, present or future. In some of the suggested themes, 
+                              one of it had been food. That was something that all of us seem to find appealing. Singapore's food has a lot of history behind it, and hawker shops in particular are something that is special 
+                              to Singapore in my opinion. After deciding on what our theme was, we thought about what type of food game we could make. At first, we thought of making a card game. However, that was quickly striked off 
+                              as card games are challenging to design on its own.
+                              <br>
+                              <br>
+                              The biggest inspiration to our final game design was a Y8 game called Bush Dog Game. We designed multiple stages that represent each type of cultural cuisine in Singapore. Unfortunately, due to time constrains, 
+                              we had only been able to implement three full stages. We had also wanted to implement a better tutorial as the dishes can get very complex but had also ran out of time. 
+                              <br>
+                              <br>
+                              You can try our game below or at our <a href="https://gideonnf.itch.io/hawker-restaurant">itch.io link</a>
+                              
+
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-5 pt-5" data-aos-once="true" data-aos="fade-in" data-aos-duration="700" data-aos-delay="300">
+              <!--<div class="col-md-5 pt-5">-->
+                  <figure class="imghvr-fade " style="background-color:black;">
+                      <img src="../images/HawkerRushPic1.jpg" class="img-fluid " >
+                      <figcaption>
+                          <h1 class="text-center">
+                              Heritage Game Jam 2020
+                          </h1>
+                          <h3 class="text-center">
+                              Hawker Rush
+                          </h3>
+                      </figcaption>
+                  </figure>
+              </div>
+          </div> 
+          <div class="d-flex justify-content-center mt-3 mb-3">
+            <div class="webgl-content">
+              <div id="unityContainer" style="width: 1280px; height: 720px"></div>
+               <div class="footer">
+                <div class="webgl-logo"></div>
+                <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+                <div class="title">WJXGameJam</div>
+              </div> 
+            </div>
+
+          </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="../js/tether.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script> 
+  </body>
+</html>
